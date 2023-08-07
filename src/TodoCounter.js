@@ -1,10 +1,10 @@
 import React from "react";
 
 
-function TodoCounter() {
+function TodoCounter({ total, completed }) {
     return (
       <h1>
-      Has completa 3 de 5
+      Has completado {completed} de {total} TODOS
      </h1>
     );
   }
