@@ -1,0 +1,10 @@
+#task {
+    font-size:medium;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #CD6688;
+    background: rgba(200, 200, 200, 0.3);
+    padding: 10px; 
+    border-radius: 10px;
+     width: 40%
+    
+}
