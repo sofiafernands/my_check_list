@@ -4,14 +4,11 @@ import './TodoItem.css';
 function TodoItem(props) {
   return (
     <li className="TodoItem">
-      <span
-        className="Icon Icon-check
-    Icon-check--active">
-        V
-      </span>
-      <p className="TodoItem-p
-    TodoItem-p--complete">{props.text}</p>
-      <span className="Icon Icon-delete"> X </span>
+      <div className="TodoItem-icons">
+        <span className="Icon Icon-check Icon-check--active">V</span>
+      </div>
+      <p className="TodoItem-p TodoItem-p--complete">{props.text}</p>
+      <button className="Icon Icon-delete">X</button>
     </li>
   );
 }

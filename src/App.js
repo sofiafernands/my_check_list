@@ -5,6 +5,9 @@ import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
 import React from 'react';
+import { Footer } from './footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const defaultTodos = [
   {text: "Llevar al perro al veterinario" , completed : true},
@@ -16,17 +19,18 @@ const defaultTodos = [
 
 function App() {
   return (
-    <>
+    <div>
       <TodoCounter completed={16} total={25} />
       <TodoSearch />
-
       <TodoList>
         {defaultTodos.map(todo => ( 
           <TodoItem key={todo.text} text={todo.text} completed={todo.completed}  />
         ))}
       </TodoList >
       <CreateTodoButton />
-    </>
+      < Footer />
+
+    </div>
 
   );
 }
