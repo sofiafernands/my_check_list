@@ -9,18 +9,27 @@
     margin-right: 1rem;
     color: #2BFF88;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 1rem;
+
 }
 
-.Icon-delete { display: flex;
-flex-direction: column;
-margin-left: 1rem;
-border-radius: 15px;
-border: none ;
-background-color: #FEA1A1;
-color: white;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-
+.Icon-delete {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #FEA1A1;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .Icon-delete:hover {
+    transform: scale(1.4); 
+  }
+  
 .TodoItem-p {
     display: flex;
     font-size:medium;
