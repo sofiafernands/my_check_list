@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TodoSearch.css"
 
 
 function TodoSearch() {
+  const [searchValue, setSearchValue] = React.useState('');
+  
     return (
       <input 
+      className="search"
       placeholder="Agregar / Buscar Tarea"
-      className="search">
+      value={searchValue}
+      onChange={(event) => {
+        setSearchValue(event.target.value)
+      }}>
         
       </input>
     );

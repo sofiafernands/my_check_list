@@ -1,3 +1,4 @@
+import { event } from 'jquery';
 import React, { useState } from 'react';
 
 function CreateTodoButton() {
@@ -26,6 +27,12 @@ function CreateTodoButton() {
 
     return (
         <button
+            onClick={(event)=> {
+                console.log('le diste click')
+                console.log(event)
+                console.log(event.target)
+            }
+        }
             style={buttonStyle}
             onMouseEnter={handleHover}
             onMouseLeave={handleHoverOut}
