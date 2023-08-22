@@ -25,7 +25,7 @@ function App() {
   const totalTodos = todos.length;
   const searchedTodos = todos.filter(
     (todo) => {
-    return todo.text.includes(searchValue)
+    return todo.text.toLowerCase().includes(searchValue.toLowerCase());
   }
   )
 
