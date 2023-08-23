@@ -25,16 +25,22 @@ function App() {
   const totalTodos = todos.length;
   const searchedTodos = todos.filter(
     (todo) => {
-    return todo.text.toLowerCase().includes(searchValue.toLowerCase());
+      const todoText = todo.text.toLowerCase();
+      const searchText = searchValue.toLowerCase();
+    return todoText.includes(searchText);
   }
   )
+const completeTodo = (text) => {
+  const newTodos = [...todos];
+  const todoIndex = newTodos.findIndex(
+    (todo) => todo.text === text
+  );
+  newTodos[todoIndex].completed = true;
+  setTodos(newTodos);
+}
 
-
-
-  console.log('Los usuarios estan buscand todos de ' + searchValue)
-  
   return (
-    <div>
+    <>
       <TodoCounter completed={completedTodos} total={totalTodos} />
       <TodoSearch 
       searchValue={searchValue}
@@ -42,13 +48,13 @@ function App() {
       />
       <TodoList>
         {searchedTodos.map(todo => ( 
-          <TodoItem key={todo.text} text={todo.text} completed={todo.completed}  />
+          <TodoItem key={todo.text} text={todo.text} completed={todo.completed} onComplete={() => completeTodo(todo.text)()}  />
         ))}
       </TodoList >
       <CreateTodoButton />
       < Footer />
 
-    </div>
+    </>
 
   );
 }

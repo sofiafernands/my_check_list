@@ -4,11 +4,11 @@ import './TodoItem.css';
 function TodoItem(props) {
   return (
     <li className="TodoItem">
-      <div className="TodoItem-icons">
-        <span className="Icon Icon-check Icon-check--active">V</span>
-      </div>
-      <p className="TodoItem-p TodoItem-p--complete">{props.text}</p>
-      <button className="Icon Icon-delete">X</button>
+        <button className={`Icon Icon-check ${props.completed && "icon-check--active"}`}
+        onClick={props.onComplete}
+        >V</button>
+      <p className={`TodoItem-p ${props.completed && "TodoItem-p--completed"}`}>{props.text}</p>
+      <button className="Icon Icon-delete"><b>X</b></button>
     </li>
   );
 }
