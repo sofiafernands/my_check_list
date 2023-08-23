@@ -28,8 +28,8 @@ function App() {
       const todoText = todo.text.toLowerCase();
       const searchText = searchValue.toLowerCase();
     return todoText.includes(searchText);
-  }
-  )
+  });
+
 const completeTodo = (text) => {
   const newTodos = [...todos];
   const todoIndex = newTodos.findIndex(
@@ -37,7 +37,15 @@ const completeTodo = (text) => {
   );
   newTodos[todoIndex].completed = true;
   setTodos(newTodos);
-}
+};
+
+const deleteTodo = (text) => {
+  const newTodos = [...todos];
+  const todoIndex = newTodos.findIndex(
+    (todo) => todo.text === text)
+    newTodos.splice(todoIndex, 1);
+    setTodos(newTodos)
+};
 
   return (
     <>
@@ -48,7 +56,13 @@ const completeTodo = (text) => {
       />
       <TodoList>
         {searchedTodos.map(todo => ( 
-          <TodoItem key={todo.text} text={todo.text} completed={todo.completed} onComplete={() => completeTodo(todo.text)()}  />
+          <TodoItem 
+          key={todo.text} 
+          text={todo.text} 
+          completed={todo.completed} 
+          onComplete={() => completeTodo(todo.text)() }
+          onDelete = {() => deleteTodo(todo.text) }
+          />
         ))}
       </TodoList >
       <CreateTodoButton />
