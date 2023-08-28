@@ -1,54 +1,26 @@
 .TodoItem {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  padding: 8px;
 }
 
-.Icon-check {
-  border-radius: 5px;
-  background-color: #494e4e;
-    display: flex;
-    flex-direction: column;
-    margin-right: 1rem;
-    color: #ebf1ed;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 1rem;
-}
 
-.Icon-check:hover {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
-  }
+.TodoItem-p {    
   
-
-
-.Icon-delete {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 15px;
-    border: none;
-    background-color: #e02121;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: all 0.3s ease-in-out; 
-  }
-  
-  .Icon-delete:hover {
-    transform: scale(1.4); 
-  }
-  
-.TodoItem-p {
-    display: flex;
-    font-size:medium;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
     background: rgba(200, 200, 200, 0.3);
-    padding: 10px; 
+    align-items: center;
+    margin: 24px 24px 24px 24px;
+    width: calc(60% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
     border-radius: 10px;
-    width: 40%
-    
+    padding: 10px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .TodoItem-p--completed {
   text-decoration: line-through;
+  
 }
+

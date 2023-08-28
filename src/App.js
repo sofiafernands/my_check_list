@@ -39,6 +39,7 @@ const completeTodo = (text) => {
   setTodos(newTodos);
 };
 
+//usamos el metodo splice para borrar con su index
 const deleteTodo = (text) => {
   const newTodos = [...todos];
   const todoIndex = newTodos.findIndex(

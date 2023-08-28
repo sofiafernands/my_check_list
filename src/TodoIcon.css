@@ -1,0 +1,41 @@
+.Icon-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Icon-container-check,
+.Icon-container-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+
+.Icon-container-check--active {
+  color: rgb(238, 7, 180)
+}
+
+
+
+.Icon-container-delete:hover,
+.Icon-container-check:hover {
+  transform: scale(1.5);
+  color: red;
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.Icon-container-delete:hover .Icon-svg,
+.Icon-container-check:hover .Icon-svg {
+  fill: red;
+}
