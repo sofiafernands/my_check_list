@@ -1,5 +1,7 @@
 import React from "react";
 import "./TodoSearch.css"
+import  date  from "./date.png"
+
 
 
 function TodoSearch({
@@ -7,15 +9,19 @@ function TodoSearch({
 }) {
  
     return (
+      <>
       <input 
       className="search"
-      placeholder="Agregar / Buscar Tarea"
+      placeholder="Add / search"
       value={searchValue}
       onChange={(event) => {
         setSearchValue(event.target.value)
-      }}>
+      }}/>
+
+<img src={ date } style={{width:'90px', height:'90px'}} />
+
+</>
         
-      </input>
     );
   }
 

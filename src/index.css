@@ -5,13 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FBAB7E;
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);  
-
+  background: rgb(250, 247, 64);
+  background: -moz-linear-gradient(90deg, rgba(250, 247, 64, 1) 0%, rgba(245, 95, 197, 1) 50%, rgba(219, 171, 104, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(250, 247, 64, 1) 0%, rgba(245, 95, 197, 1) 50%, rgba(219, 171, 104, 1) 100%);
+  background: linear-gradient(90deg, rgba(250, 247, 64, 1) 0%, rgba(245, 95, 197, 1) 50%, rgba(219, 171, 104, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#faf740", endColorstr="#dbab68", GradientType=1);
 }
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-
