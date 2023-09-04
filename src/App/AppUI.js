@@ -1,4 +1,3 @@
-//componentes de interfaz
 import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
@@ -7,7 +6,10 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { TodosLoading } from '../TodosLoading';
 import { TodosError  } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
-//import "./iconLog.css"
+import  TodoTask  from './TodoTask.png'
+import './TodoTask.css'
+
+
 
 
 
@@ -15,12 +17,19 @@ import { EmptyTodos } from '../EmptyTodos';
 function AppUI ( { completeTodo, totalTodos, searchValue, setSearchValue, searchedTodos, completedTodos, deleteTodo, error, loading } ) {
     return(
     <>
-      <TodoCounter completed={completedTodos} total={totalTodos} />
-      <TodoSearch
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-        
+    <div className='row d-flex'>    
+
+       <div className='col-sm-6'>
+         <img src={ TodoTask } className='ImgTodoTask' />
+       </div>
+
+      <div className='col-sm-6'>
+        <TodoCounter completed={completedTodos} total={totalTodos} />
+        <TodoSearch
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
       />
+
       <TodoList>
       {loading &&  <TodosLoading />}
       {error && <TodosError />}
@@ -34,9 +43,14 @@ function AppUI ( { completeTodo, totalTodos, searchValue, setSearchValue, search
             onComplete={() => completeTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
           />
-        ))}
-      </TodoList >
-      <CreateTodoButton />
+        ))};
+        </TodoList >
+        <CreateTodoButton />
+      </div>
+      <div/>
+      </div>
+
+
 
     </>
     )

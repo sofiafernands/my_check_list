@@ -6,8 +6,8 @@ function TodosLoading () {
  
     return (
         <>
-<div class="loader"></div> 
-<div class="loaders"></div>
+<div className="loader"></div> 
+<div className="loaders"></div>
 </>
         );
   }

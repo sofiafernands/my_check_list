@@ -6,7 +6,7 @@
     margin-left: 25px;
     padding: 10px;
     font-weight: normal;
-    color: #444242 ;
+    color: #444242;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -14,5 +14,4 @@
 .TodoCounter span {
     font-weight: bold;
     margin: 0 0.5rem;
-    color: #e02121;
 }

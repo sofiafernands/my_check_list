@@ -6,7 +6,7 @@ import { DeleteIcon } from '../TodoIcon/DeleteIcon'
 function TodoItem(props) {
   return (
     <>
-    <li className="TodoItem">
+    <li className="TodoItem ">
 
       <CompleteIcon 
       completed={props.completed} 
