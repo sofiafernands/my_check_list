@@ -8,13 +8,22 @@ import { TodosError  } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import  TodoTask  from './TodoTask.png'
 import './TodoTask.css'
+import { TodoContext } from '../TodoContext';
+import { useContext } from 'react';
 
 
 
+// completeTodo, totalTodos, searchValue, setSearchValue, searchedTodos, completedTodos, deleteTodo, error, loading 
 
+function AppUI ( ) {
+  const {
+    completeTodo, 
+    searchedTodos, 
+    deleteTodo, 
+    error,
+    loading
+  } = useContext (TodoContext)
 
-
-function AppUI ( { completeTodo, totalTodos, searchValue, setSearchValue, searchedTodos, completedTodos, deleteTodo, error, loading } ) {
     return(
     <>
     <div className='row d-flex'>    
@@ -24,33 +33,27 @@ function AppUI ( { completeTodo, totalTodos, searchValue, setSearchValue, search
        </div>
 
       <div className='col-sm-6'>
-        <TodoCounter completed={completedTodos} total={totalTodos} />
-        <TodoSearch
-          searchValue={searchValue}
-          setSearchValue={setSearchValue}
-      />
-
-      <TodoList>
-      {loading &&  <TodosLoading />}
-      {error && <TodosError />}
-      {(!loading && searchedTodos.length === 0) && <EmptyTodos /> }
-
-      {searchedTodos.map(todo => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
-        ))};
+        <TodoCounter  />
+        <TodoSearch />
+        <TodoList>
+          {loading &&  <TodosLoading />}
+          {error && <TodosError />}
+          {(!loading && searchedTodos.length === 0) && <EmptyTodos /> }
+  
+          {searchedTodos.map(todo => (
+              <TodoItem
+                key={todo.text}
+                text={todo.text}
+                completed={todo.completed}
+                onComplete={() => completeTodo(todo.text)}
+                onDelete={() => deleteTodo(todo.text)}
+              />
+            ))}
         </TodoList >
-        <CreateTodoButton />
+      <CreateTodoButton />
       </div>
       <div/>
       </div>
-
-
 
     </>
     )

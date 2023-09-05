@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./TodoSearch.css";
-import date from "./date.png";
+import { TodoContext } from "../TodoContext";
 
-function TodoSearch({ searchValue, setSearchValue }) {
+function TodoSearch () {
+  const  {searchValue, setSearchValue}  = useContext(TodoContext)
+
   return (
     <div className="container">
       <input
@@ -13,8 +15,6 @@ function TodoSearch({ searchValue, setSearchValue }) {
           setSearchValue(event.target.value);
         }}
       />
-
-      <img src={date} style={{ width: '90px', height: '90px' }} alt="Date" />
     </div>
   );
 }
