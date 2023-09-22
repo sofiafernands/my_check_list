@@ -15,6 +15,8 @@ function TodoProvider ({ children }) {
     const [searchValue, setSearchValue] = useState(''); 
     const completedTodos = todos.filter(todo => !!todo.completed).length;
     const totalTodos = todos.length;
+    const [openModal, setOpenModal] = useState(false); 
+
 
     const searchedTodos = todos.filter(
         (todo) => {
@@ -50,7 +52,10 @@ function TodoProvider ({ children }) {
     completedTodos,
     deleteTodo, 
     error,
-    loading}}>
+    loading,
+    openModal, 
+    setOpenModal
+    }}>
         {children}
     </TodoContext.Provider>
 )
