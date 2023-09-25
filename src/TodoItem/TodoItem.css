@@ -7,7 +7,7 @@
 
 .TodoItem-p {
 
-    background: rgba(200, 200, 200, 0.3);
+    background: rgba(142, 139, 139, 0.46);
     align-items: center;
     margin: 24px 24px 24px 24px;
     width: calc(85% - 120px);
@@ -16,10 +16,13 @@
     font-weight: 400;
     border-radius: 10px;
     padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:cursive;
+    font-weight: bold;
 }
 
 .TodoItem-p--completed {
     text-decoration: line-through;
+    text-decoration-thickness: 1.5px; /* para ajustar el valor segun preferencia */
+    text-decoration-color: #fbca18; /* color de la decoracion */
 
 }

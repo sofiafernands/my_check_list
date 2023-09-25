@@ -1,28 +1,22 @@
 .CreateTodoButton {
-    background-color: #151616;
+    background-color: #2a2b2b;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 60px;
+    font-size: 40px;
     position: fixed;
-    bottom: 15%;
-    right: 40%;
-    color: #FAFAFA;
-    display: flex;
     justify-content: center;
-    align-items: center;
     height: 70px;
     width: 70px;
-    transition: .4s ease;
-    z-index: 1;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos un sombreado suave */
+    left: 57%;
+    
 }
 
-/* le agrego el transform rotate para que gire */
 .CreateTodoButton:hover {
-    transform: rotate(360deg);
+    background-color: #35c7eb; /* Cambia el color de fondo en el estado hover */
+    transform: scale(1.1); /* Agrandamos el botón ligeramente */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta el sombreado en hover */
 }
 
-.buttonAdd {
-    justify-content: center;
-    margin-left: 15%;
-}

@@ -42,6 +42,16 @@ function TodoProvider ({ children }) {
         newItem.splice(todoIndex, 1);
         saveTodos(newItem)
     };
+
+    const addNewTodo = (text) => {
+        const newItem = [...todos];
+        newItem.push({
+            text, 
+            completed: false
+        });
+        saveTodos(newItem);  
+    };
+
     return (
     <TodoContext.Provider 
     value={{completeTodo, 
@@ -54,7 +64,8 @@ function TodoProvider ({ children }) {
     error,
     loading,
     openModal, 
-    setOpenModal
+    setOpenModal,
+    addNewTodo
     }}>
         {children}
     </TodoContext.Provider>

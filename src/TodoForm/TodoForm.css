@@ -1,8 +1,8 @@
 form {
 width: 90%;
 max-width: 300px;
-background-color: #507eb5;
-padding: 33px 50px;
+background-color: #CCC8AA;
+padding: 33px 58px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -13,14 +13,15 @@ margin: 50px;
 label {
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     color: #1e1e1f;
     margin-bottom: 26px;
+    font-family:cursive;
 }
 
 textarea {
     background-color: aliceblue;
-    border: 2px solid #202329;
+    border: 7px solid #B4B4B3;
     border-radius: 5px;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
     color: #1e1e1f;
@@ -28,14 +29,14 @@ textarea {
     text-align: center;
     padding: 12px;
     height: 96px;
-    width: calc(100% - 25px);
+    width: 100%;
     margin-bottom: 5px;
+    font-family:cursive;
 
 }
 textarea::placeholder {
     color: #a5a5a5;
-    font-family:'Times New Roman', Times, serif,
-}
+    font-family:cursive;}
 
 .TodoForm-buttonContainer {
     margin-top: 14px;
@@ -43,8 +44,9 @@ textarea::placeholder {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
+    font-family:cursive;
 }
+
 .TodoForm-button {
 cursor: pointer;
 display: inline-block;
@@ -57,15 +59,32 @@ border-radius: 5px;
 border: none;
 font-family: 'Times New Roman', Times, serif;
 }
+
 .TodoForm-button--add {
     background-color: #89B0C2;
     box-shadow: 0px 5px 25px rgba(97,218,250,0.5);
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 40%;
 }
+
+.TodoForm-button--add:hover {
+    background-color: #4c9bd8; /* Cambia el color de fondo cuando el cursor esté sobre el botón */
+}
+
 .TodoForm-button--cancel {
     background-color: transparent;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 40%;
+
 }
+
+.TodoForm-button--cancel:hover {
+    background-color: #da5858; /* Cambia el color de fondo cuando el cursor esté sobre el botón */
+}
+
 .FormContainer {
-    background-color: aqua;
+    background-color: #B4B4B3;
+    border-radius: 8px;
 }
