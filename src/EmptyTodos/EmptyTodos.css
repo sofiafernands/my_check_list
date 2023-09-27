@@ -1,0 +1,45 @@
+p {
+    cursor: pointer;
+    font-weight: bold;
+    cursor: pointer;
+    color: brown;
+    font-weight: 200;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid brown;
+    overflow: hidden;
+    transition: color 0.3s, transform 0.3s;
+}
+
+p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, brown);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+p:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+p:hover::before {
+    transform: scaleX(1);
+    animation: slide 1s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}

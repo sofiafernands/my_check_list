@@ -5,7 +5,7 @@ import { DeleteIcon } from '../TodoIcon/DeleteIcon'
 
 function TodoItem(props) {
   return (
-    <>
+    <div className="list">
     <li className="TodoItem ">
 
       <CompleteIcon 
@@ -20,7 +20,7 @@ function TodoItem(props) {
       />
      
     </li>
-    </>
+    </div>
   );
 }
 

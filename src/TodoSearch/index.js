@@ -9,7 +9,7 @@ function TodoSearch () {
     <div className="container">
       <input
         className="search"
-        placeholder="Add / search"
+        placeholder=" search..🔍"
         value={searchValue}
         onChange={(event) => {
           setSearchValue(event.target.value);

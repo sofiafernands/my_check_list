@@ -1,8 +1,11 @@
 .search {
-    text-align: center;
     background-color: #F0EDD4;
     border-radius: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
-    margin-left: 30%;
+    margin-left: 25%;
     border: none;
+    text-align: center;
+}
+.container {
+    align-items: center;
 }

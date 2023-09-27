@@ -2,6 +2,8 @@ import react, {useContext, useState} from "react";
 import './TodoForm.css'
 import { TodoContext } from "../TodoContext"
 import { event } from "jquery";
+import  person from './person.png'
+
 
 export function TodoForm () {
     const {
@@ -28,12 +30,13 @@ export function TodoForm () {
         <div className="FormContainer">
             
         <form onSubmit={onSubmit}>
-            <label>Add new note</label>
+            <label>¡Add new note!</label>
             <textarea
             value={newTodo}
             onChange={onChange}
             placeholder="write a note">
             </textarea>
+            <img src={person}/>
             <div className="TodoForm-buttonContainer">
                 <button 
                 type="button"

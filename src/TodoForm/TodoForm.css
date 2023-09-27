@@ -1,7 +1,7 @@
 form {
 width: 90%;
 max-width: 300px;
-background-color: #CCC8AA;
+background-color: #EABB7E;
 padding: 33px 58px;
 display: flex;
 justify-content: center;
@@ -14,7 +14,7 @@ label {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    color: #1e1e1f;
+    color: #FE4F32;
     margin-bottom: 26px;
     font-family:cursive;
 }
@@ -69,7 +69,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 .TodoForm-button--add:hover {
-    background-color: #4c9bd8; /* Cambia el color de fondo cuando el cursor esté sobre el botón */
+    background-color: #61CCFF; 
 }
 
 .TodoForm-button--cancel {
@@ -81,7 +81,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 .TodoForm-button--cancel:hover {
-    background-color: #da5858; /* Cambia el color de fondo cuando el cursor esté sobre el botón */
+    background-color: #da5858; 
 }
 
 .FormContainer {

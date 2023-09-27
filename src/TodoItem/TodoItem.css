@@ -1,9 +1,8 @@
+
 .TodoItem {
     display: flex;
     align-items: center;
-    padding: 5px;
 }
-
 
 .TodoItem-p {
 
@@ -23,6 +22,5 @@
 .TodoItem-p--completed {
     text-decoration: line-through;
     text-decoration-thickness: 1.5px; /* para ajustar el valor segun preferencia */
-    text-decoration-color: #fbca18; /* color de la decoracion */
-
+    text-decoration-color: #f4bf01; /* color de la decoracion */
 }

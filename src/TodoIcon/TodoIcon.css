@@ -11,18 +11,14 @@
 
 .Icon-container-check,
 .Icon-container-delete {
-  display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-
 .Icon-container-check--active {
   color: rgb(238, 7, 180)
 }
-
-
 
 .Icon-container-delete:hover,
 .Icon-container-check:hover {

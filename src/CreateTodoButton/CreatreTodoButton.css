@@ -4,19 +4,15 @@
     border-radius: 50%;
     cursor: pointer;
     font-size: 40px;
-    position: fixed;
-    justify-content: center;
     height: 70px;
     width: 70px;
     transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos un sombreado suave */
-    left: 57%;
-    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 3%;
 }
 
 .CreateTodoButton:hover {
-    background-color: #35c7eb; /* Cambia el color de fondo en el estado hover */
-    transform: scale(1.1); /* Agrandamos el botón ligeramente */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta el sombreado en hover */
+    background-color: #35c7eb;
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
-
