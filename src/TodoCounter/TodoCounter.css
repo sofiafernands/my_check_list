@@ -1,15 +1,33 @@
 
+.titleTodo h1 {
+    color: #ff8201; /* Cambia este valor para elegir tu propio color */
+    font-size: 34px; /* Tamaño de fuente */
+    font-family: 'Helvetica Neue', sans-serif; /* Tipo de fuente */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    text-align: center; /* Alineación del texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-bottom: 15px; /* Espacio inferior */
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+    padding-right: 5%;
+}
+
 .TodoCounter {
     font-size: 34px;
     color: #010101;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     margin-top: 30px;
-    margin-right: 15%;
-    
+    margin-right: 10%;
 }
+
 
 .TodoCounter span {
     font-weight: bold;
     margin: 0 0.5rem;
+}
+@media (max-width: 768px) {
+    .TodoCounter {
+       text-align: center;
+       font-size:24px ;
+    }
 }

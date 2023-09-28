@@ -32,6 +32,7 @@ export function TodoForm () {
         <form onSubmit={onSubmit}>
             <label>¡Add new note!</label>
             <textarea
+            maxlength="60"
             value={newTodo}
             onChange={onChange}
             placeholder="write a note">

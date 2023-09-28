@@ -6,7 +6,6 @@ function TodoSearch () {
   const  {searchValue, setSearchValue}  = useContext(TodoContext)
 
   return (
-    <div className="container">
       <input
         className="search"
         placeholder=" search..🔍"
@@ -15,7 +14,6 @@ function TodoSearch () {
           setSearchValue(event.target.value);
         }}
       />
-    </div>
   );
 }
 

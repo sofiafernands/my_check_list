@@ -1,11 +1,10 @@
-
+/* estilos para pantallas mas grandes (mayor a 768px) */
 .TodoItem {
     display: flex;
     align-items: center;
 }
 
 .TodoItem-p {
-
     background: rgba(142, 139, 139, 0.46);
     align-items: center;
     margin: 24px 24px 24px 24px;
@@ -15,12 +14,27 @@
     font-weight: 400;
     border-radius: 10px;
     padding: 10px;
-    font-family:cursive;
+    font-family: cursive;
     font-weight: bold;
 }
 
 .TodoItem-p--completed {
     text-decoration: line-through;
-    text-decoration-thickness: 1.5px; /* para ajustar el valor segun preferencia */
-    text-decoration-color: #f4bf01; /* color de la decoracion */
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: #f4bf01;
+}
+
+/* estilos para pantallas mas pequeñas (768px o menos) */
+@media (max-width: 768px) {
+    .TodoItem {
+        flex-direction: row; /* row = horizontalente */
+        align-items: center; 
+        width: 80%;      
+        max-width: 300px;  
+    }
+
+    .TodoItem-p {
+        width: 100%; 
+        margin: 10px 10px; /* Espacio entre elementos apilados (signo de check y delete) */
+    }
 }

@@ -1,15 +1,18 @@
+
 p {
     cursor: pointer;
     font-weight: bold;
-    cursor: pointer;
-    color: brown;
+    color: rgb(255, 255, 255);
     font-weight: 200;
     position: relative;
-    display: inline-block;
+    display: flex;
+    width: 85%;
     padding: 10px;
     border: 2px solid brown;
-    overflow: hidden;
+    overflow: hidden; /* cualquier contenido que se extienda mas allá de los límites del elemento contenedor se ocultará y no será visible para el usuario. */
     transition: color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center; 
 }
 
 p::before {
@@ -19,7 +22,7 @@ p::before {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, brown);
+    background: linear-gradient(90deg, transparent, rgb(50, 159, 255));
     transform-origin: left;
     transform: scaleX(0);
     transition: transform 0.5s;

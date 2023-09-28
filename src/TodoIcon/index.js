@@ -15,7 +15,6 @@ function TodoIcon({ type, color, onClick }) {
         >
              {iconTypes[type](color)}
         </span>
-
     )
 }
 export { TodoIcon }

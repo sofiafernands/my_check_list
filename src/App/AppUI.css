@@ -1,9 +1,15 @@
 .AppUI {
-    background-color: rgb(234, 187, 126);
+    background-color:rgb(255 0 0 / 35%);
     margin-top: 10%;
     margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 20px;
     padding-left: 110px;
+}
+@media (max-width: 768px) {
+    .AppUI {
+        padding-left: 3%;
+        padding-right: 0;
+    }
 }

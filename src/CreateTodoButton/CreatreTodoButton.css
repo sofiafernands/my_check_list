@@ -16,3 +16,9 @@
     transform: scale(1.1);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px) {
+    .CreateTodoButton {
+        margin-top: 3%;
+        
+    }
+}

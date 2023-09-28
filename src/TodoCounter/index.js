@@ -5,11 +5,16 @@ import { TodoContext } from "../TodoContext";
 function TodoCounter() {
   const { completedTodos, totalTodos } = useContext(TodoContext);
   return (
-    <div className="container d-flex  justify-content-center">
-      <h1 className="TodoCounter">
-        You have completed <span style={{ color: '#02B514' }}>{completedTodos}</span> of <span style={{ color: '#9C0908' }}>{totalTodos}</span> Task
-      </h1>
+  <>
+    <div className="titleTodo">
+    <h1>Your Organization</h1>
     </div>
+    <div className="container d-flex  justify-content-center">
+      <h2 className="TodoCounter">
+        You have completed <span style={{ color: '#02B514' }}>{completedTodos}</span> of <span style={{ color: 'rgb(208 248 6)' }}>{totalTodos}</span> Task
+      </h2>
+    </div>
+    </>
   );
 }
 
