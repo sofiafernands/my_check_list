@@ -1,6 +1,6 @@
 
 .titleTodo h1 {
-    color: #ff8201; /* Cambia este valor para elegir tu propio color */
+    color: #fdf006;; /* Cambia este valor para elegir tu propio color */
     font-size: 34px; /* Tamaño de fuente */
     font-family: 'Helvetica Neue', sans-serif; /* Tipo de fuente */
     text-transform: uppercase; /* Transforma el texto a mayúsculas */
@@ -13,7 +13,7 @@
 
 .TodoCounter {
     font-size: 34px;
-    color: #010101;
+    color:white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     margin-top: 30px;

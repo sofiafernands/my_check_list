@@ -1,7 +1,8 @@
 form {
 width: 90%;
 max-width: 300px;
-background-color: #e74848ab;
+background-color: #f7000080;
+;
 padding: 33px 58px;;
 padding: 33px 58px;
 display: flex;
@@ -25,7 +26,7 @@ textarea {
     background-color: aliceblue;
     border: 7px solid #B4B4B3;
     border-radius: 5px;
-    box-shadow: 10px 5px 50px #f70606;
+    box-shadow: 10px 5px 50px #000000;
     color: #000000;
     font-size: 15px;
     text-align: center;

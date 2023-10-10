@@ -20,8 +20,8 @@
 
 .TodoItem-p--completed {
     text-decoration: line-through;
-    text-decoration-thickness: 1.5px;
-    text-decoration-color: #f4bf01;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(0 29 255);
 }
 
 /* estilos para pantallas mas pequeñas (768px o menos) */
