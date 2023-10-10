@@ -24,7 +24,7 @@ function AppUI() {
   } = useContext(TodoContext);
 
   return (
-    <div className='AppUI d-flex flex-column align-items-center' style={{ justifyContent: 'center' }}>
+    <div className='AppUI d-flex flex-column align-items-center'>
       <TodoCounter />
       <div className='col-sm-9' style={{ maxHeight: '500px', maxWidth: '800px' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>

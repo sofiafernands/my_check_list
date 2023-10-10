@@ -73,6 +73,4 @@ function TodoProvider ({ children }) {
 }
 
 
-
-
 export { TodoContext, TodoProvider };
